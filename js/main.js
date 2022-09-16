@@ -14,4 +14,20 @@ window.onload = function(){
     }
     testimonialSlider();
 };
+
+// course preview video
+function coursePreviewVideo(){
+    const coursePreviewVideo = document.querySelector(".js-course-preview-modal");
+    if(coursePreviewVideo){
+        coursePreviewVideo.addEventListener("shown.bs.modal", function(){
+            this.querySelector(".js-course-preview-video").play();
+            this.querySelector(".js-course-preview-video").currentTime=0;
+        });
+        coursePreviewVideo.addEventListener("hide.bs.model" ,function(){
+            this.querySelector(".js-course-preview-video").pause();
+            
+        })
+    }
+}
+coursePreviewVideo()
  
