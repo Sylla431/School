@@ -757,6 +757,41 @@ h3{
 .course-instructor h4 span{
     font-weight: 300;
 }
+.course-instructor ul li i{
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.course-instructor ul li:not(last-child){
+    margin-bottom: 5px;
+}
+/* review section */
+.rating-summary .average-rating{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black-90);
+}
+.rating-summary .average-stars i{
+    color: var(--orange);
+}
+.rating-summary .rating-bars-items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.rating-summary .progress{
+    height: 8px;
+    background-color: var(--border-color-2);
+    width: calc(100% - 120px);
+    margin-right: 20px;
+    border-radius: 0;
+}
+.rating-summary .progress-bar{
+    background-color: var(--main-color);
+}
+.rating-summary .star-text{
+    min-width: 60px;
+    color: var(--orange);
+}
 /* ----------
 27 contact section
 ----------------- */
